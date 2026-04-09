@@ -1,887 +1,685 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Total Property</title>
 
-    <!-- Added for responsiveness -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+  <!-- Bootstrap -->
+   <!-- Owl Carousel -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Phudu:wght@400;500;600;700&display=swap"
-    />
-  </head>
-  <body>
-    <div class="home">
-      <!-- Added for responsiveness -->
-      <img class="home-child img-fluid" alt="" src="./public/Rectangle-608@2x.png" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
 
-      <section class="rectangle-parent">
-        <!-- Added for responsiveness -->
-        <img class="frame-child img-fluid" alt="" src="./public/Rectangle-485@2x.png" />
+<body>
 
-        <div class="frame-item"></div>
-        <header class="frame-wrapper">
-          <div class="rectangle-group">
-            <div class="frame-inner"></div>
-            <!-- Added for responsiveness -->
-            <img
-              class="rectangle-icon img-fluid"
-              loading="lazy"
-              alt=""
-              src="./public/about1.png"
-            />
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-expand-lg navbar-light custom-navbar">
+  <div class="container">
 
-            <!-- Added for responsiveness: hide desktop nav on mobile/tablet -->
-            <div class="navigation-details-wrapper d-none d-lg-flex">
-              <nav class="navigation-details">
-                <h3 class="about-us">Home</h3>
-                <h3 class="about-us">About us</h3>
-                <h3 class="about-us">Services</h3>
-                <h3 class="about-us">Contact Us</h3>
-              </nav>
-            </div>
-            <!-- Added for responsiveness: hamburger visible on mobile/tablet, hidden on desktop -->
-            <button class="hamburger-btn d-flex d-lg-none" id="hamburger-btn" aria-label="Toggle navigation" aria-expanded="false">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            <!-- Added for responsiveness: hide phone/CTA on mobile/tablet -->
-            <div class="frame-container d-none d-lg-flex">
-              <div class="frame-parent">
-                <div class="frame-group">
-                  <div class="frame-div">
-                    <div class="rectangle-container">
-                      <div class="rectangle-div"></div>
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="phone-line-3-1 img-fluid"
-                        alt=""
-                        src="./public/phone-line-3-1.svg"
-                      />
-                    </div>
-                  </div>
-                  <div class="call-us-1890-container">
-                    <span>Call us:</span>
-                    <span class="span"> <br /></span>
-                    <span class="span2">+1890 123 456</span>
-                  </div>
-                </div>
-                <div class="frame-wrapper2">
-                  <button class="arrow-right-up-line-2-1-parent">
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="arrow-right-up-line-2-1 img-fluid"
-                      alt=""
-                      src="./public/arrow-right-up-line-2-1.svg"
-                    />
+    <!-- Logo -->
+    <a class="navbar-brand fw-bold" href="#">
+      <img src="assets/images/logo.png" height="50">
+    </a>
 
-                    <div class="get-in-touch">get in touch</div>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
-        <nav class="mobile-nav" id="mobile-nav" aria-hidden="true">
-          <h3 class="mobile-nav-link">Home</h3>
-          <h3 class="mobile-nav-link">About us</h3>
-          <h3 class="mobile-nav-link">Services</h3>
-          <h3 class="mobile-nav-link">Contact Us</h3>
-        </nav>
-        <div class="frame-parent2">
-          <div class="frame-parent3">
-            <div class="frame-wrapper3">
-              <div class="rectangle-parent2">
-                <div class="frame-child2"></div>
-                <h3 class="total-constructors">Total Constructors</h3>
-              </div>
-            </div>
-            <div class="group-div">
-              <div class="frame-child3"></div>
-              <!-- Added for responsiveness -->
-              <img
-                class="frame-child4 img-fluid"
-                loading="lazy"
-                alt=""
-                src="./public/Rectangle-5341@2x.png"
-              />
-            </div>
-          </div>
-          <div class="frame-parent4">
-            <!-- Added for 1440px fix: flex-xxl-nowrap prevents the ≤1650px CSS flex-wrap:wrap from firing at 1440px -->
-            <div class="frame-parent5 flex-xxl-nowrap">
-              <div class="integrated-property-services-u-parent">
-                <h1 class="integrated-property-services">
-                  Integrated Property Services Under One Trusted Name
-                </h1>
-                <div class="end-to-end-solutions-including">
-                  End-to-end solutions including construction, restoration,
-                  environmental services, demolition, moving, and waste
-                  management.
-                </div>
-              </div>
-              <div class="content-overview-wrapper">
-                <div class="content-overview">
-                  <div class="rectangle-parent3">
-                    <div class="frame-child3"></div>
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="frame-child4 img-fluid"
-                      loading="lazy"
-                      alt=""
-                      src="./public/Rectangle-540@2x.png"
-                    />
-                  </div>
-                  <div class="rectangle-parent4">
-                    <div class="frame-child3"></div>
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="frame-child4 img-fluid"
-                      loading="lazy"
-                      alt=""
-                      src="./public/Rectangle-538@2x.png"
-                    />
-                  </div>
-                  <div class="rectangle-parent5">
-                    <div class="frame-child3"></div>
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="frame-child4 img-fluid"
-                      loading="lazy"
-                      alt=""
-                      src="./public/Rectangle-544@2x.png"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <section class="frame-section">
-              <button class="frame-button">
-                <div class="rectangle-parent6">
-                  <div class="frame-child11"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="arrow-right-up-line-2-2 img-fluid"
-                    alt=""
-                    src="./public/arrow-right-up-line-2-1.svg"
-                  />
-                </div>
-                <div class="get-a-quote">Get a Quote</div>
-              </button>
-              <div class="frame-wrapper4">
-                <div class="rectangle-parent5">
-                  <div class="frame-child3"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="frame-child4 img-fluid"
-                    loading="lazy"
-                    alt=""
-                    src="./public/Rectangle-545@2x.png"
-                  />
-                </div>
-              </div>
-            </section>
-          </div>
+    <!-- Mobile Toggle -->
+<button class="navbar-toggler d-lg-none" type="button" id="menuToggle">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu -->
+    <div class="d-none d-lg-flex justify-content-center">
+      <ul class="navbar-nav gap-4">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Right side -->
+    <div class="d-none d-lg-flex align-items-center gap-3">
+  <div class="phone-box d-flex align-items-center gap-2">
+    <div class="phone-icon">
+      <i class="bi bi-telephone-fill"></i>
+    </div>
+    <div>
+      <span>Call us:</span><br>
+      <strong>+1890 123 456</strong>
+    </div>
+  </div>
+
+<a href="#" class="btn custom-btn">
+  <i class="bi bi-arrow-up-right"></i>GET IN TOUCH 
+</a>
+</div>
+
+  </div>
+</nav>
+<div id="drawerOverlay" class="drawer-overlay"></div>
+<!-- ================= MOBILE DRAWER ================= -->
+<div id="mobileMenu" class="mobile-drawer">
+  <div class="drawer-header">
+    <button id="closeMenu">✕</button>
+  </div>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About us</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Contact Us</a></li>
+  </ul>
+</div>
+
+
+<!-- ================= HERO SECTION ================= -->
+<section class="hero">
+
+  <div class="owl-carousel hero-carousel">
+
+    <!-- Slide 1 -->
+    <div class="hero-slide" style="background-image: url('./assets/images/banner.png');">
+      <div class="overlay"></div>
+
+      <div class="container hero-content">
+        <h1>
+          INTEGRATED PROPERTY<br>
+          SERVICES UNDER ONE<br>
+          TRUSTED NAME
+        </h1>
+
+        <p>
+          End-to-end solutions including construction, restoration,
+          environmental services, demolition, moving, and waste management.
+        </p>
+
+       <a href="#" class="btn custom-btn">
+  <i class="bi bi-arrow-up-right"></i>GET IN TOUCH 
+</a>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="hero-slide" style="background-image: url('./assets/images/banner.png');">
+      <div class="overlay"></div>
+
+      <div class="container hero-content">
+        <h1>SECOND SLIDE TITLE</h1>
+        <p>Description text here</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- Right Side Logos -->
+  <div class="side-logos">
+    <div class="logo-box" data-name="TOTAL CONSTRUCTORS">
+      <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL CONSTRUCTORS</span>
+    </div>
+
+    <div class="logo-box" data-name="TOTAL ASSETS">
+     <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL ASSETS</span>
+    </div>
+
+    <div class="logo-box" data-name="TOTAL RESTORATIONS">
+      <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL RESTORATIONS</span>
+    </div>
+
+    <div class="logo-box" data-name="TOTAL DEMOLITION">
+      <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL DEMOLITION</span>
+    </div>
+
+    <div class="logo-box" data-name="TOTAL WASTE">
+      <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL WASTE</span>
+    </div>
+
+    <div class="logo-box" data-name="TOTAL MOVERS">
+      <img src="assets/images/logo-right.png">
+      <span class="logo-text">TOTAL MOVERS</span>
+    </div>
+  </div>
+
+</section>
+<section class="about-section">
+  <div class="container">
+    <div class="row align-items-center">
+
+      <!-- LEFT CONTENT -->
+      <div class="col-lg-6">
+
+        <span class="about-tag">ABOUT US</span>
+
+        <h2 class="about-title">
+          COMPLETE PROPERTY<br>
+          SOLUTIONS DELIVERED<br>
+          WITH PRECISION
+        </h2>
+
+        <p class="about-text">
+          Total Property Solutions Inc. is a multi-division property services
+          company delivering reliable, efficient, and professional solutions
+          for residential, commercial, and project-based needs.
+        </p>
+
+        <p class="about-text">
+          We provide a single, trusted source for construction support,
+          restoration, moving, environmental services, demolition, and waste
+          management — all under one umbrella.
+        </p>
+
+        <a href="#" class="about-link">
+          <i class="bi bi-arrow-up-right"></i> JOIN US NOW
+        </a>
+
+      </div>
+
+      <!-- RIGHT IMAGE -->
+      <div class="col-lg-6 position-relative">
+
+        <div class="about-image">
+          <img src="./assets/images/about.png" alt="">
         </div>
-        <section class="frame-parent6">
-          <div class="frame-wrapper5">
-            <div class="rectangle-parent8">
-              <div class="frame-child3"></div>
-              <!-- Added for responsiveness -->
-              <img
-                class="frame-child4 img-fluid"
-                loading="lazy"
-                alt=""
-                src="./public/Rectangle-546@2x.png"
-              />
-            </div>
-          </div>
-          <div class="image-placeholders">
-            <div class="image-placeholders-child"></div>
-            <div class="image-placeholders-item"></div>
-            <div class="image-placeholders-inner"></div>
-          </div>
-        </section>
-      </section>
-      <section class="home-inner">
-        <div class="frame-parent7">
-          <section class="instance-parent">
-            <button class="start-hiring-wrapper">
-              <div class="start-hiring">About Us</div>
-            </button>
-            <h1 class="complete-property-solutions">
-              Complete Property Solutions Delivered with Precision
-            </h1>
-          </section>
-          <div class="frame-parent8">
-            <section class="frame-wrapper6">
-              <div class="total-property-solutions-inc-parent">
-                <div class="total-property-solutions">
-                  Total Property Solutions Inc. is a multi-division property
-                  services company delivering reliable, efficient, and
-                  professional solutions for residential, commercial, and
-                  project-based needs.<br /><br />We provide a single, trusted
-                  source for construction support, restoration, moving,
-                  environmental services, demolition, and waste management — all
-                  under one umbrella.
-                </div>
-                <div class="frame-wrapper7">
-                  <div class="frame-parent9">
-                    <div class="rectangle-parent6">
-                      <div class="frame-child11"></div>
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="arrow-right-up-line-2-2 img-fluid"
-                        loading="lazy"
-                        alt=""
-                        src="./public/arrow-right-up-line-2-1.svg"
-                      />
-                    </div>
-                    <div class="join-us-now-wrapper">
-                      <h3 class="join-us-now">join us now</h3>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="rectangle-parent10">
-              <!-- Added for responsiveness -->
-              <img
-                class="frame-child17 img-fluid"
-                loading="lazy"
-                alt=""
-                src="./public/Rectangle-5401@2x.png"
-              />
 
-              <div class="rectangle-parent11">
-                <div class="frame-child18"></div>
-                <div class="parent">
-                  <h2 class="h2">10</h2>
-                  <div class="wrapper">
-                    <h1 class="h1">+</h1>
-                  </div>
-                </div>
-                <div class="years-of-experience-parent">
-                  <h3 class="years-of-experience">Years of Experience</h3>
-                  <div class="decades-of-expertise">
-                    Decades of expertise providing trusted construction
-                    services.
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
+        <!-- EXPERIENCE BOX -->
+        <div class="experience-box">
+          <h3>10<span>+</span></h3>
+          <p class="exp-title">YEARS OF EXPERIENCE</p>
+          <p class="exp-text">
+            Decades of expertise providing trusted construction services.
+          </p>
         </div>
-      </section>
-      <!-- Added for responsiveness: row g-0 activates Bootstrap col-* grid -->
-      <!-- Added for 1440px fix: flex-xxl-nowrap stops ≤1650px flex-wrap; justify-content-xxl-between restores space-between (overrides CSS justify-content:center at ≤1650px) -->
-      <section class="rectangle-parent12 row g-0 flex-xxl-nowrap justify-content-xxl-between">
-        <div class="frame-child19"></div>
-        <div class="frame-parent10 col-12 col-sm-6 col-md-3">
-          <div class="completed-projects-parent">
-            <h2 class="completed-projects">completed projects</h2>
-            <div class="line-div"></div>
-          </div>
-          <h2 class="spacing-characters">659+</h2>
-        </div>
-        <div class="frame-parent11 col-12 col-sm-6 col-md-3">
-          <div class="completed-projects-parent">
-            <h2 class="happy-customer">happy customer</h2>
-            <div class="line-div"></div>
-          </div>
-          <h2 class="spacing-characters">89K+</h2>
-        </div>
-        <div class="employees-parent col-12 col-sm-6 col-md-3">
-          <h2 class="happy-customer">Employees</h2>
-          <div class="line-parent">
-            <div class="line-div"></div>
-            <h2 class="missing-value">150+</h2>
-          </div>
-        </div>
-        <div class="frame-parent12 col-12 col-sm-6 col-md-3">
-          <div class="years-in-business-parent">
-            <h2 class="completed-projects">Years In Business</h2>
-            <div class="frame-child22"></div>
-          </div>
-          <h2 class="spacing-characters">10+</h2>
-        </div>
-      </section>
-      <section class="frame-parent13">
-        <div class="frame-parent14">
-          <section class="instance-group">
-            <div class="start-hiring-container">
-              <h3 class="start-hiring2">Our Divisions</h3>
-            </div>
-            <!-- Added for 1440px fix: flex-xxl-nowrap stops the ≤1650px flex-wrap on solutions-info -->
-            <div class="solutions-info flex-xxl-nowrap">
-              <h1 class="quality-construction-solutions">
-                Quality Construction Solutions Provided
-              </h1>
-              <!-- Added for responsiveness -->
-              <img
-                class="solutions-info-child img-fluid"
-                loading="lazy"
-                alt=""
-                src="./public/Group-10708.svg"
-              />
-            </div>
-          </section>
-          <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap on the 4 service cards -->
-          <div class="frame-parent15 flex-xxl-nowrap">
-            <section class="image-parent">
-              <!-- Added for responsiveness -->
-              <img class="image-icon img-fluid" alt="" src="./public/image2@2x.png" />
 
-              <div class="image"></div>
-              <div class="properties">
-                <div class="rectangle-parent13">
-                  <div class="frame-child23"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="frame-child24 img-fluid"
-                    loading="lazy"
-                    alt=""
-                    src="./public/Rectangle-534@2x.png"
-                  />
-                </div>
-              </div>
-              <div class="titles">
-                <h2 class="total-asbestos">Total Asbestos</h2>
-                <div class="safe-identification-removal-parent">
-                  <div class="safe-identification-removal">
-                    Safe identification, removal, and disposal of asbestos
-                    materials.
-                  </div>
-                  <div class="demolition-actions-parent">
-                    <div class="demolition-actions">
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="arrow-right-up-line-2-23 img-fluid"
-                        loading="lazy"
-                        alt=""
-                        src="./public/arrow-right-up-line-2-1.svg"
-                      />
-                    </div>
-                    <div class="join-us-now2">join us now</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="image-group">
-              <!-- Added for responsiveness -->
-              <img class="image-icon img-fluid" alt="" src="./public/image3@2x.png" />
+      </div>
 
-              <div class="image"></div>
-              <div class="frame-wrapper8">
-                <div class="rectangle-parent14">
-                  <div class="frame-child23"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="frame-child24 img-fluid"
-                    loading="lazy"
-                    alt=""
-                    src="./public/Rectangle-535@2x.png"
-                  />
-                </div>
-              </div>
-              <div class="titles">
-                <div class="total-demolition-wrapper">
-                  <h2 class="total-demolition">Total Demolition</h2>
-                </div>
-                <div class="controlled-demolition-services-parent">
-                  <div class="safe-identification-removal">
-                    Controlled demolition services for residential and
-                    commercial structures.
-                  </div>
-                  <div class="frame-wrapper9">
-                    <div class="demolition-actions-parent">
-                      <div class="demolition-actions">
-                        <!-- Added for responsiveness -->
-                        <img
-                          class="arrow-right-up-line-2-23 img-fluid"
-                          loading="lazy"
-                          alt=""
-                          src="./public/arrow-right-up-line-2-1.svg"
-                        />
-                      </div>
-                      <div class="join-us-now2">join us now</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="image-container">
-              <!-- Added for responsiveness -->
-              <img class="image-icon img-fluid" alt="" src="./public/image1@2x.png" />
+    </div>
+  </div>
+</section>
+<section class="stats-section">
+  <div class="overlay"></div>
 
-              <div class="image"></div>
-              <div class="frame-wrapper10">
-                <div class="rectangle-parent13">
-                  <div class="frame-child23"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="frame-child24 img-fluid"
-                    loading="lazy"
-                    alt=""
-                    src="./public/Rectangle-536@2x.png"
-                  />
-                </div>
-              </div>
-              <div class="frame-parent18">
-                <div class="frame-parent19">
-                  <div class="total-constructors-wrapper">
-                    <h2 class="total-demolition">Total Constructors</h2>
-                  </div>
-                  <div class="complete-construction-services">
-                    Complete construction services from planning to execution.
-                  </div>
-                </div>
-                <div class="frame-wrapper11">
-                  <div class="demolition-actions-parent">
-                    <div class="demolition-actions">
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="arrow-right-up-line-2-23 img-fluid"
-                        loading="lazy"
-                        alt=""
-                        src="./public/arrow-right-up-line-2-1.svg"
-                      />
-                    </div>
-                    <div class="join-us-now2">join us now</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-            <section class="image-parent2">
-              <!-- Added for responsiveness -->
-              <img class="image-icon img-fluid" alt="" src="./public/image@2x.png" />
+  <div class="container">
+    <div class="row text-center">
 
-              <div class="image"></div>
-              <div class="frame-wrapper12">
-                <div class="rectangle-parent14">
-                  <div class="frame-child23"></div>
-                  <!-- Added for responsiveness -->
-                  <img
-                    class="frame-child24 img-fluid"
-                    loading="lazy"
-                    alt=""
-                    src="./public/Rectangle-537@2x.png"
-                  />
-                </div>
-              </div>
-              <div class="frame-parent18">
-                <div class="frame-parent19">
-                  <div class="total-restorations-wrapper">
-                    <h2 class="total-demolition">Total Restorations</h2>
-                  </div>
-                  <div class="complete-construction-services">
-                    Restoring damaged or aging properties to their best
-                    condition.
-                  </div>
-                </div>
-                <div class="frame-wrapper13">
-                  <div class="demolition-actions-parent">
-                    <div class="demolition-actions">
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="arrow-right-up-line-2-23 img-fluid"
-                        alt=""
-                        src="./public/arrow-right-up-line-2-1.svg"
-                      />
-                    </div>
-                    <div class="join-us-now2">join us now</div>
-                  </div>
-                </div>
-              </div>
-            </section>
-          </div>
-        </div>
-        <!-- Added for responsiveness -->
-        <img
-          class="group-icon img-fluid"
+      <div class="col-lg-3 col-md-6 stat-item">
+        <p class="stat-title">COMPLETED PROJECTS</p>
+        <div class="stat-line"></div>
+        <h2>659<span>+</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 stat-item">
+        <p class="stat-title">HAPPY CUSTOMER</p>
+        <div class="stat-line"></div>
+        <h2>89K<span>+</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 stat-item">
+        <p class="stat-title">EMPLOYEES</p>
+        <div class="stat-line"></div>
+        <h2>150<span>+</span></h2>
+      </div>
+
+      <div class="col-lg-3 col-md-6 stat-item">
+        <p class="stat-title">YEARS IN BUSINESS</p>
+        <div class="stat-line"></div>
+        <h2>10<span>+</span></h2>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="division-section">
+  <div class="container">
+
+    <!-- HEADER -->
+    <div class="division-header d-flex justify-content-between align-items-start">
+
+      <div>
+        <span class="section-tag">OUR DIVISIONS</span>
+        <h2 class="section-title">
+          QUALITY CONSTRUCTION<br>
+          SOLUTIONS PROVIDED
+        </h2>
+      </div>
+
+      <!-- Arrows -->
+      <div class="division-arrows">
+  <button class="arrow-btn prevBtn"><i class="bi bi-arrow-left"></i></button>
+  <button class="arrow-btn nextBtn"><i class="bi bi-arrow-right"></i></button>
+</div>
+
+    </div>
+
+    <!-- CARDS -->
+   <div class="owl-carousel division-carousel mt-4">
+
+  <!-- CARD -->
+  <div class="division-card">
+    <img src="./assets/images/image (20).png">
+    <div class="card-overlay"></div>
+
+    <div class="card-content">
+      <img src="./assets/images/logo-right.png" class="card-logo">
+      <h4>TOTAL ASBESTOS</h4>
+      <p>Safe identification, removal, and disposal of asbestos materials.</p>
+      <a href="#"><i class="bi bi-arrow-up-right"></i> JOIN US NOW</a>
+    </div>
+  </div>
+
+  <div class="division-card">
+    <img src="./assets/images/image (21).png">
+    <div class="card-overlay"></div>
+
+    <div class="card-content">
+      <img src="./assets/images/logo-right.png" class="card-logo">
+      <h4>TOTAL DEMOLITION</h4>
+      <p>Controlled demolition services for residential and commercial structures.</p>
+      <a href="#"><i class="bi bi-arrow-up-right"></i> JOIN US NOW</a>
+    </div>
+  </div>
+
+  <div class="division-card">
+    <img src="./assets/images/image (22).png">
+    <div class="card-overlay"></div>
+
+    <div class="card-content">
+      <img src="./assets/images/logo-right.png" class="card-logo">
+      <h4>TOTAL CONSTRUCTORS</h4>
+      <p>Complete construction services from planning to execution.</p>
+      <a href="#"><i class="bi bi-arrow-up-right"></i> JOIN US NOW</a>
+    </div>
+  </div>
+
+  <div class="division-card">
+    <img src="./assets/images/image (23).png">
+    <div class="card-overlay"></div>
+
+    <div class="card-content">
+      <img src="./assets/images/logo-right.png" class="card-logo">
+      <h4>TOTAL RESTORATIONS</h4>
+      <p>Restoring damaged or aging properties to their best condition.</p>
+      <a href="#"><i class="bi bi-arrow-up-right"></i> JOIN US NOW</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
+ <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap that stacks the two panels -->
+      <section class="rectangle-parent17 position-relative">
+         <img
+          class="frame-child46"
           loading="lazy"
           alt=""
-          src="./public/Group-10709.svg"
+          src="assets/images/Group-10709.svg"
         />
-      </section>
-      <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap that stacks the two panels -->
-      <section class="rectangle-parent17 flex-xxl-nowrap">
-        <div class="frame-child31"></div>
-        <div class="frame-parent24">
-          <section class="frame-parent25">
-            <div class="instance-wrapper">
-              <div class="start-hiring-frame">
-                <h3 class="start-hiring2">Why choose us</h3>
-              </div>
-            </div>
+        <!-- Top: Heading (left) + Image (right) -->
+        <div class="row g-0 why-top-row">
+          <div class="col-12 col-lg-6 why-heading-col">
+           
+              <span class="section-tag">Why choose us</span>
             <h1 class="choose-us-for">
-              Choose us for reliable, high-quality service
+              Choose us for reliable,<br />
+              high-quality service
             </h1>
-          </section>
-          <section class="frame-wrapper14">
-            <div class="frame-parent26">
-              <div class="rectangle-parent18">
-                <div class="frame-child32"></div>
-                <h3 class="multi-service-solutions-under">
-                  Multi-service solutions under one company
-                </h3>
-                <div class="we-provide-a">
-                  We provide a wide range of property services under one trusted
-                  brand, reducing the need to manage multiple contractors.
-                </div>
-              </div>
-              <div class="frame-wrapper15">
-                <div class="rectangle-parent19">
-                  <div class="frame-child32"></div>
-                  <h2 class="safety-focused-approach">
-                    Safety-Focused Approach
-                  </h2>
-                  <div class="we-follow-responsible">
-                    We follow responsible work practices with a strong emphasis
-                    on safety and site awareness.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
-        <div class="rectangle-parent20">
-          <!-- Added for responsiveness -->
+        <div class="why-image-col">
           <img
-            class="frame-child34 img-fluid"
+            class="frame-child34"
             alt=""
-            src="./public/Rectangle-599@2x.png"
+            src="assets/images/Rectangle-599@2x.png"
           />
-
-          <div class="rectangle-parent21">
-            <div class="frame-child35"></div>
-            <h2 class="reliable-efficient">Reliable & Efficient Service</h2>
-            <div class="we-are-committed">
-              We are committed to delivering dependable, well-organized, and
-              efficient solutions for every project.
+        </div>
+        <!-- Bottom: 3×2 feature cards grid -->
+        <div class="row g-0 why-cards-row">
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h3 class="multi-service-solutions-under">
+                Multi-service solutions under one company
+              </h3>
+              <div class="we-provide-a">
+                We provide a wide range of property services under one trusted
+                brand, reducing the need to manage multiple contractors.
+              </div>
             </div>
           </div>
-          <section class="frame-wrapper16">
-            <div class="rectangle-parent22">
-              <div class="frame-child35"></div>
-              <h2 class="quality-accountability">Quality & Accountability</h2>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h2 class="professional-coordination">
+                Professional coordination
+              </h2>
+              <div class="our-divisions-work">
+                Our divisions work together seamlessly to ensure smooth
+                planning, execution, and timely project completion.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h2 class="reliable-efficient">
+                Reliable &amp; Efficient Service
+              </h2>
+              <div class="we-are-committed">
+                We are committed to delivering dependable, well-organized, and
+                efficient solutions for every project.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h2 class="safety-focused-approach">Safety-Focused Approach</h2>
+              <div class="we-follow-responsible">
+                We follow responsible work practices with a strong emphasis on
+                safety and site awareness.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h3 class="residential-commercial">
+                Residential &amp; Commercial Expertise
+              </h3>
+              <div class="we-serve-both">
+                We serve both residential and commercial clients with flexible
+                and scalable solutions.
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <div class="why-card">
+              <h2 class="quality-accountability">
+                Quality &amp; Accountability
+              </h2>
               <div class="we-maintain-high">
                 We maintain high standards of workmanship, professionalism, and
                 customer satisfaction.
               </div>
             </div>
-          </section>
-          <div class="rectangle-parent23">
-            <div class="frame-child37"></div>
-            <h2 class="professional-coordination">Professional coordination</h2>
-            <div class="our-divisions-work">
-              Our divisions work together seamlessly to ensure smooth planning,
-              execution, and timely project completion.
-            </div>
           </div>
-          <div class="rectangle-parent24">
-            <div class="frame-child37"></div>
-            <h3 class="residential-commercial">
-              Residential & Commercial Expertise
-            </h3>
-            <div class="we-serve-both">
-              We serve both residential and commercial clients with flexible and
-              scalable solutions.
+        </div>
+      </section>
+
+      <!-- How We Work — Bootstrap grid: image col-md-5, content col-md-7, steps col-sm-6 -->
+      <section class="frame-main">
+        <div class="row g-0 align-items-stretch w-100">
+          <!-- Image column -->
+          <div class="col-12 col-lg-5 hww-img-col">
+            <img
+              class="frame-child39"
+              loading="lazy"
+              alt=""
+              src="assets/images/Rectangle-609@2x.png"
+            />
+          </div>
+
+          <!-- Content column -->
+          <div class="col-12 col-lg-7 rectangle-parent25">
+            <div class="frame-child40"></div>
+            <div class="frame-parent27">
+              <div class="instance-wrapper">
+                 <span class="section-tag">how we work</span>
+              </div>
+              <h1 class="efficient-transparent-reliable">
+                Efficient Transparent Reliable Professional
+              </h1>
+            </div>
+
+            <!-- Steps: 2-per-row on sm+, 1-per-row on xs -->
+            <div class="row g-4 steps-grid">
+              <div class="col-12">
+                <div class="assessments">
+                  <h2 class="consultation">1. Consultation</h2>
+                  <div class="service-estimation">
+                    <h3 class="we-understand-your">
+                      We understand your project scope and specific service
+                      requirements.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="assessments">
+                  <h2 class="consultation">2. Assessment & Estimate</h2>
+                  <div class="service-estimation">
+                    <h3 class="we-understand-your">
+                      We evaluate the site and provide a clear, structured
+                      service plan.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="assessments">
+                  <h2 class="consultation">3. Planning & Coordination</h2>
+                  <div class="service-estimation">
+                    <h3 class="we-understand-your">
+                      We organize the required divisions and schedule the work
+                      efficiently.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="assessments">
+                  <h2 class="consultation">4. Execution</h2>
+                  <div class="service-estimation">
+                    <h3 class="we-understand-your">
+                      Our team completes the work safely, professionally, and on
+                      time.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="assessments">
+                  <h2 class="consultation">5. Final Review</h2>
+                  <div class="service-estimation">
+                    <h3 class="we-understand-your">
+                      We ensure all work meets expectations and project
+                      standards.
+                    </h3>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap that stacks the image and content panels -->
-      <main class="frame-main flex-xxl-nowrap">
-        <!-- Added for responsiveness -->
-        <img
-          class="frame-child39 img-fluid"
-          loading="lazy"
-          alt=""
-          src="./public/Rectangle-609@2x.png"
-        />
 
-        <div class="rectangle-parent25">
-          <div class="frame-child40"></div>
-          <section class="frame-parent27">
-            <div class="instance-wrapper">
-              <button class="start-hiring-wrapper2">
-                <div class="start-hiring">how we work</div>
-              </button>
-            </div>
-            <h1 class="efficient-transparent-reliable">
-              Efficient Transparent Reliable Professional
-            </h1>
-          </section>
-          <section class="frame-wrapper17">
-            <div class="assessments-parent">
-              <div class="assessments">
-                <h2 class="consultation">
-                  <ol class="assessment-estimate">
-                    <li>Consultation</li>
-                  </ol>
-                </h2>
-                <div class="service-estimation">
-                  <h3 class="we-understand-your">
-                    We understand your project scope and specific service
-                    requirements.
-                  </h3>
-                </div>
-              </div>
-              <div class="assessments">
-                <h2 class="consultation">
-                  <ol class="assessment-estimate">
-                    <li>Assessment & Estimate</li>
-                  </ol>
-                </h2>
-                <div class="we-evaluate-the-site-and-provi-wrapper">
-                  <h3 class="we-evaluate-the">
-                    We evaluate the site and provide a clear, structured service
-                    plan.
-                  </h3>
-                </div>
-              </div>
-            </div>
-          </section>
-          <div class="frame-wrapper18">
-            <div class="planning-coordination-parent">
-              <h2 class="consultation">
-                <ol class="assessment-estimate">
-                  <li>Planning & Coordination</li>
-                </ol>
-              </h2>
-              <div class="we-evaluate-the-site-and-provi-wrapper">
-                <h3 class="we-evaluate-the">
-                  We organize the required divisions and schedule the work
-                  efficiently.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper18">
-            <div class="planning-coordination-parent">
-              <h2 class="consultation">
-                <ol class="assessment-estimate">
-                  <li>Execution</li>
-                </ol>
-              </h2>
-              <div class="we-evaluate-the-site-and-provi-wrapper">
-                <h3 class="we-evaluate-the">
-                  Our team completes the work safely, professionally, and on
-                  time.
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="frame-wrapper20">
-            <div class="planning-coordination-parent">
-              <h2 class="consultation">
-                <ol class="assessment-estimate">
-                  <li>Final Review</li>
-                </ol>
-              </h2>
-              <div class="we-evaluate-the-site-and-provi-wrapper">
-                <h3 class="we-evaluate-the">
-                  We ensure all work meets expectations and project standards.
-                </h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
+      <!-- Customer Feedback — Bootstrap grid: badge+heading full-width, cards col-md-6 -->
       <section class="customer-feedback">
-        <div class="frame-parent28">
-          <section class="frame-parent29">
-            <div class="instance-frame">
-              <div class="start-hiring-wrapper3">
-                <h3 class="start-hiring2">Trusted Client Reviews</h3>
-              </div>
+        <!-- Badge + Heading -->
+        <div class="row g-0 mb-4 mb-md-5">
+          <div class="col-12 col-lg-6">
+            <div class="instance-frame mb-3">
+              <span class="section-tag">Trusted Client Reviews</span>
+              
             </div>
-            <div class="frame-parent30">
-              <div class="rectangle-wrapper">
-                <!-- Added for responsiveness -->
-                <img
-                  class="frame-child41 img-fluid"
-                  loading="lazy"
-                  alt=""
-                  src="./public/Rectangle-611@2x.png"
-                />
-              </div>
-              <div class="we-are-extremely">
-                We are extremely impressed with the construction team's
-                professionalism, innovative solutions, and attention to detail,
-                delivering our project perfectly on schedule.
-              </div>
-            </div>
-          </section>
-          <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap on the client feedback row -->
-          <section class="client-feedback flex-xxl-nowrap">
             <h1 class="real-customer-feedback">
               Real Customer Feedback From Our Clients
             </h1>
-            <div class="client-detail">
-              <div class="frame-parent31">
-                <div class="frame-wrapper21">
-                  <div class="james-anderson-parent">
-                    <h3 class="james-anderson">James Anderson</h3>
-                    <div class="project-manager">Project Manager</div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <!-- Testimonials Owl Carousel — 1 slide at a time, custom dots -->
+            <div id="testimonials-carousel" class="owl-carousel owl-theme testimonials-carousel">
+
+              <!-- Slide 1: James Anderson -->
+              <div class="feedback-card">
+                <div class="frame-parent30">
+                  <div class="rectangle-wrapper">
+                    <img
+                      class="frame-child41 img-fluid"
+                      loading="lazy"
+                      alt=""
+                      src="assets/images/Rectangle-611@2x.png"
+                    />
+                  </div>
+                  <div class="we-are-extremely">
+                    We are extremely impressed with the construction team's
+                    professionalism, innovative solutions, and attention to
+                    detail, delivering our project perfectly on schedule.
                   </div>
                 </div>
-                <div class="client-divider"></div>
-                <div class="frame-wrapper22">
-                  <div class="frame-parent32">
-                    <div class="rectangle-frame">
-                      <!-- Added for responsiveness -->
-                      <img
-                        class="frame-child41 img-fluid"
-                        loading="lazy"
-                        alt=""
-                        src="./public/Rectangle-612@2x.png"
-                      />
-                    </div>
-                    <div class="we-greatly-appreciate">
-                      We greatly appreciate the team's commitment to safety,
-                      quality, and client satisfaction, making our commercial
-                      construction project a complete success.
-                    </div>
-                  </div>
+                <div class="client-divider mt-4"></div>
+                <div class="james-anderson-parent mt-3">
+                  <h3 class="james-anderson">James Anderson</h3>
+                  <div class="project-manager">Project Manager</div>
                 </div>
               </div>
-            </div>
-          </section>
-          <div class="frame-parent33">
-            <div class="frame-wrapper23">
-              <div class="emma-roberts-parent">
-                <h3 class="james-anderson">Emma Roberts</h3>
-                <div class="project-manager">Operations Director</div>
+
+              <!-- Slide 2: Emma Roberts -->
+              <div class="feedback-card">
+                <div class="frame-parent32">
+                  <div class="rectangle-frame">
+                    <img
+                      class="frame-child41 img-fluid"
+                      loading="lazy"
+                      alt=""
+                      src="assets/images/Rectangle-612@2x.png"
+                    />
+                  </div>
+                  <div class="we-greatly-appreciate">
+                    We greatly appreciate the team's commitment to safety,
+                    quality, and client satisfaction, making our commercial
+                    construction project a complete success.
+                  </div>
+                </div>
+                <div class="client-divider mt-4"></div>
+                <div class="emma-roberts-parent mt-3">
+                  <h3 class="james-anderson">Emma Roberts</h3>
+                  <div class="project-manager">Operations Director</div>
+                </div>
               </div>
+
             </div>
-            <div class="rectangle-parent26">
-              <div class="frame-child43"></div>
-              <div class="frame-child44"></div>
-              <div class="frame-child45"></div>
-            </div>
+
+            <!-- Custom navigation dots — generated by JS to match slide count -->
+            <div class="testimonials-custom-dots mt-4"></div>
           </div>
         </div>
       </section>
+
       <section class="frame-parent34">
         <!-- Added for responsiveness -->
         <img
-          class="frame-child46 img-fluid"
+          class="frame-child46"
           loading="lazy"
           alt=""
-          src="./public/Group-10709.svg"
+          src="assets/images/Group-10709.svg"
         />
 
+        <!-- Footer — Bootstrap grid: 3 cols on md+, stacked on mobile -->
         <div class="rectangle-parent27">
           <div class="frame-child47"></div>
           <div class="frame-wrapper24">
             <div class="frame-parent35">
-              <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap on the footer info columns -->
-              <section class="frame-parent36 flex-xxl-nowrap">
-                <div class="we-provide-reliable-integrate-wrapper">
-                  <div class="we-provide-reliable">
-                    We provide reliable, integrated property solutions
-                    delivering quality, efficiency, and value across every stage
-                    of your project.
-                  </div>
-                </div>
-                <div class="contact-us-details">
-                  <div class="contact-us-info">
-                    <div class="contact-address">
-                      <h2 class="our-newsletter">contact us</h2>
-                    </div>
-                    <div class="address-3616-56">
-                      Address:<br />3616 56 St NW, Edmonton, Alberta
-                    </div>
-                  </div>
-                </div>
-                <div class="newsletter-info-parent">
-                  <div class="contact-address">
-                    <h2 class="our-newsletter">Our newsletter</h2>
-                  </div>
-                  <div class="receive-construction-updates">
-                    Receive construction updates, project highlights, and expert
-                    insights delivered directly each week.
-                  </div>
-                </div>
-              </section>
-              <!-- Added for 1440px fix: flex-xxl-nowrap prevents ≤1650px flex-wrap on the email capture row -->
-              <section class="email-capture flex-xxl-nowrap">
-                <div class="subscribe-button-area">
-                  <div class="rectangle-parent28">
-                    <div class="frame-child48"></div>
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="frame-child49 img-fluid"
-                      loading="lazy"
-                      alt=""
-                      src="./public/Rectangle-5201@2x.png"
-                    />
-                  </div>
-                </div>
-                <div class="email-entry-field">
-                  <div class="email-input-area-parent">
-                    <div class="email-input-area">
-                      <h2 class="email-placeholder">+1 780-251-0059</h2>
-                      <h3 class="infototalpropertysolutionsco">
-                        info@totalpropertysolutions.com
-                      </h3>
-                    </div>
-                    <!-- Added for responsiveness -->
-                    <img
-                      class="frame-child50 img-fluid"
-                      loading="lazy"
-                      alt=""
-                      src="./public/Group-10672.svg"
-                    />
-                  </div>
-                </div>
-                <div class="email-capture-field">
-                  <div class="enter-your-email-parent">
-                    <!-- Added for responsiveness -->
-                    <input
-                      class="enter-your-email w-100"
-                      placeholder="Enter your email..."
-                      type="text"
-                    />
 
-                    <div class="frame-child51"></div>
+              <!-- Row 1: tagline | contact us | newsletter -->
+              <div class="row g-4 g-lg-5 footer-info-row w-100 mb-4 mb-lg-5">
+                <div class="col-12 col-lg-4">
+                  <div class="we-provide-reliable-integrate-wrapper">
+                    <div class="we-provide-reliable">
+                      We provide reliable, integrated property solutions
+                      delivering quality, efficiency, and value across every
+                      stage of your project.
+                    </div>
                   </div>
-                  <button class="subscription-action">
-                    <div class="rectangle-parent6">
-                      <div class="frame-child11"></div>
-                      <!-- Added for responsiveness -->
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="contact-us-details">
+                    <div class="contact-us-info">
+                      <div class="contact-address">
+                        <h2 class="our-newsletter">contact us</h2>
+                      </div>
+                      <div class="address-3616-56">
+                        Address:<br />3616 56 St NW, Edmonton, Alberta
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="newsletter-info-parent">
+                    <div class="contact-address">
+                      <h2 class="our-newsletter">Our newsletter</h2>
+                    </div>
+                    <div class="receive-construction-updates">
+                      Receive construction updates, project highlights, and
+                      expert insights delivered directly each week.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Row 2: logo | contact info | subscribe form -->
+              <div class="row g-4 g-lg-5 footer-email-row w-100">
+                <div class="col-12 col-lg-4">
+                  <div class="subscribe-button-area">
+                    <div class="rectangle-parent28">
+                      <div class="frame-child48"></div>
                       <img
-                        class="arrow-right-up-line-2-2 img-fluid"
+                        class="frame-child49 img-fluid"
+                        loading="lazy"
                         alt=""
-                        src="./public/arrow-right-up-line-2-1.svg"
+                        src="assets/images/Rectangle-5201@2x.png"
                       />
                     </div>
-                    <div class="subscribe-today">Subscribe today</div>
-                  </button>
+                  </div>
                 </div>
-              </section>
+                <div class="col-12 col-lg-4">
+                  <div class="email-entry-field">
+                    <div class="email-input-area-parent">
+                      <div class="email-input-area">
+                        <h2 class="email-placeholder">+1 780-251-0059</h2>
+                        <h3 class="infototalpropertysolutionsco">
+                          info@totalpropertysolutions.com
+                        </h3>
+                      </div>
+                      <img
+                        class="frame-child50 img-fluid"
+                        loading="lazy"
+                        alt=""
+                        src="assets/images/Group-10672.svg"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <div class="email-capture-field">
+                    <div class="enter-your-email-parent">
+                      <input
+                        class="enter-your-email w-100"
+                        placeholder="Enter your email..."
+                        type="text"
+                      />
+                      <div class="frame-child51"></div>
+                    </div>
+                    <button class="subscription-action w-100">
+                      <div class="rectangle-parent6">
+                        <div class="frame-child11"></div>
+                        <img
+                          class="arrow-right-up-line-2-2 img-fluid"
+                          alt=""
+                          src="assets/images/arrow-right-up-line (2) 2.png"
+                        />
+                      </div>
+                      <div class="subscribe-today">Subscribe today</div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
+
           <section class="footer-bar">
             <div class="footer-divider"></div>
             <footer class="copyright-info">
@@ -890,23 +688,21 @@
                   Copyright © 2025 by Total Property Solutions All Rights
                   Reserved.
                 </div>
-                <div class="email-entry-field">
-                  <div class="privacy-policy">
-                    Privacy Policy | Terms & Services
-                  </div>
+                <div class="privacy-policy">
+                  Privacy Policy | Terms &amp; Services
                 </div>
               </div>
             </footer>
           </section>
         </div>
       </section>
-    </div>
-    <script src="./index.js"></script>
-    <!-- Added for responsiveness -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc4s9bIOgUxi8T/jzmLzTPEopqzUhAiAamK7L7U5e0ep"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- Custom JS -->
+<script src="assets/script.js"></script>
+
+</body>
 </html>
