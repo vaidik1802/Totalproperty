@@ -2645,3 +2645,1015 @@ letter-spacing: 5%;
   z-index: 2;
   flex-shrink: 0;
 }
+/* ******************************* */
+
+.aboutus-pg-container {
+
+  padding: 60px 15px;
+  margin: 0 auto;
+}
+
+.aboutus-pg-badge {
+  background: #0d6efd;
+  /* Bootstrap pure blue */
+  color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.aboutus-pg-main-title {
+  font-family: "Phudu";
+
+  font-weight: 700;
+  font-size: 2.9rem;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 2%;
+}
+
+.aboutus-pg-text-content p {
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.aboutus-pg-sub-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #000;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+.aboutus-pg-img-tall {
+  width: 100%;
+  height: 600px;
+  /* Force tall portrait shape */
+  object-fit: cover;
+  display: block;
+  margin-top: 40px;
+}
+
+.aboutus-pg-img-top {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 45px;
+}
+
+.aboutus-pg-quote-box {
+  border-left: 4px solid #0d6efd;
+  padding-left: 20px;
+  margin: 30px 0 30px 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #222;
+  line-height: 1.5;
+}
+
+.aboutus-pg-section-title {
+  font-family: "Phudu";
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #000;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.aboutus-pg-divider {
+  border-top: 1px solid #e2e8f0;
+  margin: 20px 0;
+}
+
+ul.aboutus-pg-core-values {
+  padding-left: 18px;
+  margin-bottom: 0;
+  list-style-type: disc;
+}
+
+ul.aboutus-pg-core-values li {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #555555;
+  margin-bottom: 8px;
+}
+
+ul.aboutus-pg-core-values li::marker {
+  color: #a0aec0;
+  font-size: 14px;
+}
+
+/* Adjust gutters */
+.aboutus-pg-row.gx-5 {
+  --bs-gutter-x: 5rem;
+}
+
+@media (max-width: 991px) {
+  .aboutus-pg-row.gx-5 {
+    --bs-gutter-x: 2rem;
+  }
+
+  .aboutus-pg-img-tall,
+  .aboutus-pg-img-top {
+    height: auto;
+  }
+}
+
+/* MAIN SECTION */
+.rectangle-parent-about {
+  position: relative;
+  padding: 56px 112px 90px;
+  min-height: 500px;
+  color: #fff;
+
+  /* BACKGROUND IMAGE */
+  background-image: url("./images/banner1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+/* OVERLAY */
+.rectangle-parent-about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+/* KEEP CONTENT ABOVE */
+.rectangle-parent-about>* {
+  position: relative;
+  z-index: 1;
+}
+.hero-content {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  text-align: center;
+  color: #fff;
+  padding: 110px 100px  110px ;
+}
+
+.hero-content h1 {
+   font-family: "Phudu";
+  font-size: 3.3rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hero-content p {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/* NEW SECTION STYLES */
+.aboutus-standout-stripes {
+  height: 25px;
+  background: repeating-linear-gradient(45deg,
+      #facc15,
+      #facc15 15px,
+      #111 15px,
+      #111 30px);
+  width: 100%;
+}
+
+.aboutus-standout-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./images/aboutus3.png') center/cover no-repeat;
+  padding: 80px;
+  color: #fff;
+}
+
+.aboutus-standout-heading {
+  font-family: "Phudu";
+  font-weight: 600;
+  font-size: 2.8rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.aboutus-standout-p {
+  font-size: 1.1rem;
+  color: #e2e8f0;
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.aboutus-standout-bluebox {
+  background-color: #0d6efd;
+  padding: 40px 35px;
+  color: #ffffff;
+  max-width: 275px;
+  margin-top: auto;
+  /* margin-left: auto; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.aboutus-standout-number {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.aboutus-standout-plus {
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: -10px;
+}
+
+.aboutus-standout-box-title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.aboutus-standout-box-text {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.aboutus-divisions-section {
+  padding: 80px 0;
+  background: #fafafa;
+}
+
+.aboutus-divisions-controls {
+  display: flex;
+  gap: 10px;
+}
+
+.aboutus-divisions-btn {
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 18px;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+.aboutus-divisions-btn:hover {
+  background: #0d6efd;
+  color: #fff;
+  border-color: #0d6efd;
+}
+
+.aboutus-divisions-slider-wrapper {
+  margin-top: 40px;
+  position: relative;
+}
+
+.aboutus-divisions-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  padding-bottom: 20px;
+}
+
+.aboutus-divisions-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.aboutus-divisions-card {
+  flex: 0 0 calc(25% - 15px);
+  min-width: 260px;
+  height: 420px;
+  position: relative;
+  background: #111;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+@media (max-width: 1200px) {
+  .aboutus-divisions-card {
+    flex: 0 0 calc(33.333% - 14px);
+  }
+}
+
+@media (max-width: 900px) {
+  .aboutus-divisions-card {
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .aboutus-divisions-card {
+    flex: 0 0 calc(85% - 10px);
+  }
+}
+
+.aboutus-divisions-card-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s ease;
+}
+
+.aboutus-divisions-card:hover .aboutus-divisions-card-bg {
+  transform: scale(1.05);
+}
+
+.aboutus-divisions-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 40%, rgba(0, 0, 0, 0.85) 100%);
+}
+
+.aboutus-divisions-card-content {
+  position: relative;
+  z-index: 2;
+  padding: 30px 25px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.aboutus-divisions-logo {
+  background: #fff;
+  padding: 8px;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #0d6efd;
+  font-size: 22px;
+  line-height: 0.9;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.aboutus-divisions-logo img {
+  height: 100%;
+  max-height: 100px;
+  max-width: 100px;
+  width: 100%;
+}
+
+.aboutus-divisions-logo span {
+  font-size: 6px;
+  font-weight: 800;
+  color: #333;
+  margin-top: 2px;
+  letter-spacing: -0.2px;
+  line-height: 1;
+}
+
+.aboutus-divisions-card-title {
+  font-family: "Phudu";
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+
+.aboutus-divisions-card-desc {
+  color: #e2e8f0;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-weight: 400;
+}
+
+.aboutus-divisions-card-link {
+  color: #fff;
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: color 0.3s;
+}
+
+.aboutus-divisions-card-link:hover {
+  color: #0d6efd;
+}
+
+.contactus-pg-container {
+
+  padding: 60px 15px;
+  margin: 0 auto;
+}
+
+.contactus-pg-map {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  background-color: #f0f0f0;
+  /* Image representing a map view */
+}
+
+.contactus-pg-main-title {
+  font-family: "Phudu";
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  color: #000;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contactus-pg-text-desc {
+  font-size: 1.1rem;
+  color: #000000;
+  font-weight: 400;
+  line-height: 1.6;
+  margin-bottom: 45px;
+}
+
+.contactus-pg-info-block {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.contactus-pg-icon-box {
+  width: 32px;
+  height: 32px;
+  background: #0d6efd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
+
+.contactus-pg-icon-box svg {
+  width: 14px;
+  height: 14px;
+  fill: #ffffff;
+}
+
+.contactus-pg-info-title {
+  font-family: "Phudu";
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: #000;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.contactus-pg-info-text {
+  font-size: 1.1rem;
+  color: #555555;
+  line-height: 1.5;
+}
+
+.contactus-pg-form-box {
+  background-color: #DAE9F2;
+  /* Light blue matching image */
+  padding: 50px 45px;
+  border-radius: 3px;
+  height: 100%;
+}
+
+.contactus-pg-form-title {
+  font-family: "Phudu";
+  font-weight: 500;
+  font-size: 2.8rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.contactus-pg-form-desc {
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 600;
+}
+
+.contactus-pg-input {
+  font-size: 13px;
+  padding: 14px 15px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: none !important;
+  margin-bottom: 18px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.contactus-pg-input::placeholder {
+  color: #999;
+}
+
+.contactus-pg-input:focus {
+  outline: 1px solid #0d6efd;
+}
+
+.contactus-pg-btn {
+  background: #0d6efd;
+  color: #ffffff;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 0;
+  display: inline-flex;
+  align-items: stretch;
+  /* So icon box fills height */
+  text-transform: uppercase;
+  margin-top: 10px;
+  transition: background 0.3s;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.contactus-pg-btn:hover {
+  background: #0b5ed7;
+}
+
+.contactus-pg-btn-icon {
+  background: #ffffff;
+  color: #0d6efd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  padding: 12px 0;
+}
+
+.contactus-pg-btn-icon svg {
+  width: 10px;
+  height: 10px;
+  fill: #0d6efd;
+  transform: rotate(45deg);
+  /* Point up-right */
+}
+
+.contactus-pg-btn-text {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+    .services-pg-intro {
+      text-align: center;
+      font-weight: 500;
+      padding: 30px 20px;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto;
+      color: #1E1E1E;
+      line-height: 1.6;
+    }
+
+    .services-pg-container {
+     
+      padding: 0 15px 80px 15px;
+      margin: 0 auto;
+    }
+
+    .services-pg-badge {
+      background: #0d6efd;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 6px 14px;
+      text-transform: uppercase;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .services-pg-main-title {
+      font-family: "Phudu";
+      font-weight: 700;
+      font-size: 2.8rem;
+      line-height: 1.1;
+      color: #000;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+    }
+
+    .services-pg-card {
+      border: 1px solid #e2e8f0;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+    }
+
+    .services-pg-card-content {
+      padding: 30px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .services-pg-card-title {
+      font-family: "Phudu";
+      font-size: 1.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+      line-height: 1.1;
+      color: #222222;
+    }
+
+    .services-pg-card-subtitle {
+      font-size: 1.1rem;
+      font-style: italic;
+      color: #555555;
+      margin-bottom: 20px;
+    }
+
+    .services-pg-list {
+      padding-left: 20px;
+      margin-bottom: 30px;
+      flex-grow: 1;
+    }
+
+    .services-pg-list li {
+      font-size: 1.1rem;
+      color: #555;
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-weight: 400;
+    }
+
+    .services-pg-link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: #000;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+    }
+
+    .services-pg-link:hover {
+      color: #0d6efd;
+    }
+
+    .services-pg-link svg {
+      width: 10px;
+      height: 10px;
+      margin-right: 6px;
+      transform: rotate(45deg);
+    }
+
+    .services-pg-img-container {
+      position: relative;
+      height: 220px;
+      width: 100%;
+    }
+
+    .services-pg-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+.services-pg-logo-overlay {
+      position: absolute;
+      top: -40px;
+      right: 25px;
+      width: 85px;
+      height: 85px;
+      background: #fff;
+      border: 1px solid #0d6efd; /* Blue border default */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 6px; /* Added inner padding so images aren't flush to the edge */
+    }
+
+    .services-pg-logo-overlay-text {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .services-pg-logo-overlay-text img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain; /* Ensures the image fits correctly while retaining aspect ratio */
+    }
+
+    .services-pg-logo-overlay-sub {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 5px;
+      font-weight: 800;
+      color: #333;
+      margin-top: 3px;
+      text-align: center;
+      line-height: 1.1;
+      letter-spacing: -0.1px;
+    }
+
+    .services-pg-bottom-stripe {
+      height: 15px;
+      background: repeating-linear-gradient(45deg, #facc15, #facc15 15px, #222 15px, #222 30px);
+      width: 100%;
+    }
+    
+    /* Specific logo colors based on the image provided */
+    .color-blue { color: #0d6efd; }
+    .color-te { color: #16a34a; } /* Green for TE */
+    .color-tm { color: #dc2626; } /* Red for TM */
+    
+    .border-blue { border-color: #0d6efd; }
+    .border-te { border-color: #16a34a; }
+    .border-tm { border-color: #dc2626; }
+
+@media (max-width: 991px) {
+  .contactus-pg-form-box {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactus-pg-form-box {
+    margin-top: 30px;
+  }
+
+  .contactus-pg-main-title {
+
+    font-size: 2rem;
+
+  }
+  .contactus-pg-container {
+    padding: 19px 0px;
+    margin: 0 auto;
+}
+.contactus-pg-text-desc {
+    font-size: 1.1rem;
+    
+    margin-bottom: 15px;
+}
+.contactus-pg-info-title {
+    
+    font-size: 1.1rem;
+  
+}
+.contactus-pg-form-box {
+   
+    padding: 30px 45px;
+   
+}
+.aboutus-pg-main-title {
+ 
+    font-size: 2rem;
+  
+}
+.aboutus-pg-img-tall, .aboutus-pg-img-top {
+    width: 50%;
+    margin: auto;
+    height: auto;
+}
+.aboutus-pg-container {
+    padding: 18px 15px;
+    margin: 0 auto;
+}
+.aboutus-standout-section {
+  
+    padding: 20px;
+    color: #fff;
+}
+.aboutus-standout-heading {
+   
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+.aboutus-standout-p {
+    
+    margin-bottom: 10px;
+}
+.aboutus-standout-bluebox {
+    background-color: #0d6efd;
+    padding: 11px 14px;
+    color: #ffffff;
+    max-width: 235px;
+    margin-top: auto;
+    /* margin-left: auto; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.aboutus-standout-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+   
+}
+.aboutus-standout-plus {
+    font-size: 20px;
+
+}
+.aboutus-divisions-card-title {
+    
+    font-size: 1.3rem;
+   
+}
+}
+
+.contactus-pg-info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+@media (max-width: 576px) {
+  .contactus-pg-info-grid {
+    grid-template-columns: 1fr;
+  }
+  .contactus-pg-form-box {
+    margin-top: 15px;
+  }
+
+  .contactus-pg-main-title {
+
+    font-size: 1.5rem;
+
+  }
+  .contactus-pg-container {
+    padding: 19px 0px;
+    margin: 0 auto;
+}
+.contactus-pg-text-desc {
+    font-size: 1.1rem;
+    
+    margin-bottom: 15px;
+}
+.contactus-pg-info-title {
+    
+    font-size: 1.1rem;
+  
+}
+.contactus-pg-form-box {
+   
+    padding: 10px 20px;
+   
+}
+.contactus-pg-form-title {
+  
+    font-size: 1.8rem;
+  
+}
+.contactus-pg-form-desc {
+    font-size: 1.1rem;
+    
+    margin-bottom: 20px;
+
+}
+.contactus-pg-info-title {
+    
+    font-size: 1.1rem;
+  
+}
+.contactus-pg-form-box {
+   
+    padding: 30px 45px;
+   
+}
+.aboutus-pg-main-title {
+ 
+    font-size: 1.5rem;
+  
+}
+.aboutus-pg-quote-box {
+    border-left: 4px solid #0d6efd;
+    padding-left: 20px;
+    margin: 16px 0 15px 0px;
+   
+    font-weight: 600;
+    font-size: 1rem;
+   
+}
+.aboutus-pg-divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 10px 0;
+}
+.aboutus-pg-img-tall, .aboutus-pg-img-top {
+    width: 50%;
+    margin: auto;
+    height: auto;
+}
+.aboutus-pg-container {
+    padding: 18px 5px;
+    margin: 0 auto;
+}
+.aboutus-standout-section {
+  
+    padding: 0px;
+    color: #fff;
+}
+.aboutus-divisions-controls {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+.aboutus-standout-heading {
+   
+    font-size: 2rem;
+    margin-bottom: 10px;
+
+}
+.aboutus-divisions-card-content {
+    position: relative;
+    z-index: 2;
+    padding: 30px 15px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.aboutus-divisions-slider {
+    display: flex;
+    gap: 10px;
+
+}
+.aboutus-standout-p {
+    
+    margin-bottom: 10px;
+}
+.aboutus-standout-bluebox {
+    background-color: #0d6efd;
+    padding: 11px 14px;
+    color: #ffffff;
+    max-width: 235px;
+    margin-top: auto;
+    /* margin-left: auto; */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+.aboutus-standout-number {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+   
+}
+.aboutus-standout-plus {
+    font-size: 20px;
+
+}
+.aboutus-divisions-card-title {
+    
+    font-size: 1.3rem;
+   
+}
+}
