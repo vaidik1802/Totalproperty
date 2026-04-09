@@ -76,6 +76,54 @@ body {
   padding-top: 120px;
 }
 
+/* ================= PAGE HERO (Service Details, etc.) ================= */
+.page-hero {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.page-hero-content {
+  position: relative;
+  z-index: 1;
+  padding-top: 80px;
+}
+
+.page-hero-title {
+  font-family: "Phudu", sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.page-hero-breadcrumb {
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.page-hero-breadcrumb a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.page-hero-breadcrumb a:hover {
+  text-decoration: underline;
+}
+
 /* Center menu properly */
 /* Desktop */
 .navbar-nav {
@@ -269,7 +317,7 @@ body {
 /* ================= SIDE LOGOS ================= */
 .side-logos {
   position: absolute;
-  right: 40px;
+  right: 60px;
   top: 50%;
   transform: translateY(-50%);
   display: flex;
@@ -710,6 +758,7 @@ body {
   font-family: Phudu;
   color: #000;
   padding: 60px 112px;
+  overflow: hidden;
 }
 
 /* Top row: heading + image */
@@ -1299,6 +1348,7 @@ letter-spacing: 5%;
   position: relative;
   isolation: isolate;
   max-width: 100%;
+  overflow: hidden;
 }
 .frame-child46 {
   height: 40px;
@@ -2584,4 +2634,14 @@ letter-spacing: 5%;
     font-size: 14px;
     line-height: 22px;
   }
+}
+.group-icon {
+  height: 40px;
+  width: 2109px;
+  position: absolute;
+  margin: 0 !important;
+  right: -95px;
+  top: 0;
+  z-index: 2;
+  flex-shrink: 0;
 }
