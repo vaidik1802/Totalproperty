@@ -8,8 +8,8 @@ body {
    font-family: "Poppins", sans-serif;
    overflow-x: hidden;
 }
-.container-fluid {
-  padding: 0 112px 0;
+.section-padding {
+  padding: 0 50px;
 }
 .navbar-toggler {
   border: none;
@@ -61,15 +61,37 @@ body {
   left: 0;
   width: 100%;
   z-index: 999;
+  padding: 0 50px;
 }
-
 .custom-navbar .container-fluid {
   background: #fff;
   padding: 12px 15px;
   border-radius: 6px;
 }
-.hero-content {
-  padding-left: 5%;
+
+/* SAME PADDING AS ALL SECTIONS */
+.hero-wrapper {
+  padding: 0 50px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* LEFT TEXT */
+.hero-inner {
+  max-width: 600px;
+  color: #fff;
+  z-index: 2;
+}
+
+/* SIDE LOGOS FIXED INSIDE GRID */
+.side-logos {
+  position: static; /* remove absolute */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .hero-slide {
@@ -728,8 +750,6 @@ body {
   position: relative;
   z-index: 2;
   color: #fff;
-  max-width: 650px;
-  margin-left: 0; /* important */
 }
 /* Heading EXACT look */
 .hero-content h1 {
@@ -763,20 +783,15 @@ body {
 
 /* ================= SIDE LOGOS ================= */
 .side-logos {
-  position: absolute;
-  right: 60px;
-  top: 50%;
-  transform: translateY(-50%);
-  display: flex;
+ display: flex;
   flex-direction: column;
   gap: 12px;
-  z-index: 5;
 }
 
 .logo-box {
   position: relative;
   background: #fff;
-  padding: 5px;
+  padding: 0px;
   border-radius: 4px;
   cursor: pointer;
   transition: 0.3s;
@@ -843,8 +858,23 @@ body {
 
 /* ================= MOBILE ================= */
 @media (max-width: 992px) {
-
-  .custom-navbar .container {
+  .section-padding {
+  padding: 0 12px 0 !important;
+}
+.custom-navbar {
+  padding: 0 12px 0 !important;
+}
+.hero-content h1 {
+    font-size: 1.8rem !important;
+}
+.hero-content {
+    padding: 11px !important;
+}
+.hero-content p {
+    margin-top: 6px !important;
+    font-size: 15px !important;
+}
+  .custom-navbar .container-fluid {
     border-radius: 0;
   }
 
@@ -853,7 +883,7 @@ body {
   }
 
   .side-logos {
-    display: none;
+    display: flex;
   }
 
 }
@@ -1204,7 +1234,6 @@ body {
   width: 100%;
   font-family: Phudu;
   color: #000;
-  padding: 60px 112px;
   overflow: hidden;
 }
 
@@ -1340,7 +1369,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 106px 67px 194px;
   box-sizing: border-box;
   gap: 56px;
   z-index: 2;
@@ -1390,13 +1418,11 @@ body {
   position: relative;
   font-size: inherit;
   letter-spacing: 0.02em;
-  line-height: 80px;
   font-weight: 600;
   font-family: inherit;
   z-index: 3;
 }
 .frame-wrapper17 {
-  width: 758px;
   display: flex;
   align-items: flex-start;
   padding: 0 5px;
@@ -1511,7 +1537,6 @@ body {
 .customer-feedback {
   display: block; /* override shared display:flex — Bootstrap rows handle layout */
   align-self: stretch;
-  padding: 80px 112px 120px;
   text-align: left;
   color: #707070;
 font-family: Poppins;
@@ -1829,7 +1854,6 @@ letter-spacing: 5%;
 }
 .frame-wrapper24 {
   width: 100%;
-  padding: 0 80px;
   box-sizing: border-box;
   flex-shrink: 0;
   display: flex;
@@ -2114,7 +2138,7 @@ letter-spacing: 5%;
 .copyright-info {
   align-self: stretch;
   justify-content: center;
-  padding: 0 20px 0 22px;
+  padding: 0 50px;
   box-sizing: border-box;
   flex-shrink: 0;
   text-align: left;
@@ -2360,20 +2384,15 @@ letter-spacing: 5%;
     padding-bottom: 156px;
     box-sizing: border-box;
   }
-  .why-heading-col {
+  /* .why-heading-col {
     padding: 50px 40px;
-  }
+  } */
   .frame-main {
     padding-bottom: 105px;
     box-sizing: border-box;
   }
   .rectangle-parent25 {
-    padding: 69px 33px 126px;
     box-sizing: border-box;
-  }
-  /* frame-parent28/29 removed — Bootstrap grid handles layout */
-  .customer-feedback {
-    padding: 60px 60px 100px;
   }
   .rectangle-parent27 {
     gap: 61px;
@@ -2556,11 +2575,6 @@ letter-spacing: 5%;
     font-size: 28px;
     line-height: 34px;
   }
-
-  /* Why Choose Us */
-  .rectangle-parent17 {
-    padding: 40px 20px 60px;
-  }
   .choose-us-for {
     font-size: 38px;
     line-height: 46px;
@@ -2585,7 +2599,6 @@ letter-spacing: 5%;
     box-sizing: border-box;
   }
   .rectangle-parent25 {
-    padding: 45px 40px 82px;
     box-sizing: border-box;
   }
   .efficient-transparent-reliable {
@@ -2595,11 +2608,6 @@ letter-spacing: 5%;
   .consultation {
     font-size: 24px;
     line-height: 30px;
-  }
-
-  /* Customer Feedback */
-  .customer-feedback {
-    padding: 60px 40px 80px;
   }
   .frame-parent30 {
     flex-wrap: wrap;
@@ -2614,7 +2622,6 @@ letter-spacing: 5%;
 
   /* Footer */
   .rectangle-parent27 { gap: 31px; padding-top: 103px; padding-bottom: 20px; box-sizing: border-box; }
-  .frame-wrapper24 { padding: 0 40px; }
   .newsletter-info-parent { gap: 17px; }
   .our-newsletter { font-size: 24px; line-height: 30px; }
   .email-placeholder { font-size: 26px; line-height: 24px; }
@@ -2625,8 +2632,6 @@ letter-spacing: 5%;
 
 /* ===== 5: Mobile landscape / small tablet (≤768px) ===== */
 @media screen and (max-width: 768px) {
-  /* Footer — Bootstrap grid handles column stacking at <768px */
-  .frame-wrapper24 { padding: 0 20px; }
   .rectangle-parent27 { padding-top: 80px; padding-bottom: 20px; }
   .copyright-details { flex-direction: column; align-items: center; text-align: center; gap: 10px; }
 
@@ -2641,7 +2646,6 @@ letter-spacing: 5%;
     min-height: 300px;
   }
   .rectangle-parent25 {
-    padding: 50px 30px 60px;
     box-sizing: border-box;
   }
   .frame-parent27 {
@@ -2651,10 +2655,7 @@ letter-spacing: 5%;
     gap: 1rem !important;
   }
 
-  /* Customer feedback — Bootstrap grid stacks cards at <768px */
-  .customer-feedback {
-    padding: 40px 20px 60px;
-  }
+
   .real-customer-feedback {
     font-size: 34px;
     line-height: 44px;
@@ -3014,11 +3015,6 @@ letter-spacing: 5%;
     font-size: 15px;
     line-height: 24px;
   }
-
-  /* Customer Feedback */
-  .customer-feedback {
-    padding: 30px 16px 50px;
-  }
   .real-customer-feedback {
     font-size: 26px;
     line-height: 34px;
@@ -3034,11 +3030,6 @@ letter-spacing: 5%;
   .we-greatly-appreciate {
     font-size: 15px;
     line-height: 24px;
-  }
-
-  /* Footer */
-  .frame-wrapper24 {
-    padding: 0 20px;
   }
   .we-provide-reliable {
     font-size: 16px;
@@ -3097,7 +3088,7 @@ letter-spacing: 5%;
 
 .aboutus-pg-container {
 
-  padding: 60px 15px;
+  padding: 60px 0;
   margin: 0 auto;
 }
 
@@ -3250,16 +3241,9 @@ ul.aboutus-pg-core-values li::marker {
   z-index: 1;
 }
 .hero-content {
-  position: absolute;
-  top: 65%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  text-align: center;
-  color: #fff;
-  padding: 110px 100px  110px ;
+    text-align: left;
+    color: #fff;
 }
-
 .hero-content h1 {
    font-family: "Phudu";
   font-size: 3.3rem;
@@ -3286,7 +3270,6 @@ ul.aboutus-pg-core-values li::marker {
 
 .aboutus-standout-section {
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./images/aboutus3.png') center/cover no-repeat;
-  padding: 80px;
   color: #fff;
 }
 
@@ -3917,12 +3900,10 @@ ul.aboutus-pg-core-values li::marker {
     height: auto;
 }
 .aboutus-pg-container {
-    padding: 18px 15px;
+    padding: 18px 0;
     margin: 0 auto;
 }
 .aboutus-standout-section {
-  
-    padding: 20px;
     color: #fff;
 }
 .aboutus-standout-heading {
@@ -4045,7 +4026,7 @@ ul.aboutus-pg-core-values li::marker {
     height: auto;
 }
 .aboutus-pg-container {
-    padding: 18px 5px;
+    padding: 18px 0;
     margin: 0 auto;
 }
 .aboutus-standout-section {
@@ -4125,5 +4106,3 @@ ul.aboutus-pg-core-values li::marker {
    
 }
 }
-
-

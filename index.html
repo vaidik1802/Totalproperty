@@ -31,7 +31,7 @@
   <body>
     <!-- ================= NAVBAR ================= -->
     <nav class="navbar navbar-expand-lg navbar-light custom-navbar">
-      <div class="container-fluid">
+      <div class="container-fluid section-padding">
         <!-- Logo -->
         <a class="navbar-brand fw-bold" href="index.html">
           <img src="assets/images/logo.png" height="50" />
@@ -89,17 +89,20 @@
     </div>
 
     <!-- ================= HERO SECTION ================= -->
-    <section class="hero">
-      <div class="owl-carousel hero-carousel">
-        <!-- Slide 1 -->
-        <div
-          class="hero-slide"
-          style="background-image: url(&quot;./assets/images/banner.png&quot;)"
-        >
-          <div class="overlay"></div>
 
-          <div class="container hero-content">
-            <h1>
+    <section class="hero">
+
+  <div class="owl-carousel hero-carousel">
+
+    <div class="hero-slide" style="background-image: url('./assets/images/banner.png');">
+      <div class="overlay"></div>
+
+      <!-- FULL WIDTH WRAPPER -->
+      <div class="container-fluid section-padding hero-wrapper hero-content">
+
+        <!-- CONTENT (aligned like other sections) -->
+        <div class="hero-inner">
+          <h1>
               INTEGRATED PROPERTY<br />
               SERVICES UNDER ONE<br />
               TRUSTED NAME
@@ -113,24 +116,9 @@
             <a href="#" class="btn custom-btn">
               <i class="bi bi-arrow-up-right"></i>GET IN TOUCH
             </a>
-          </div>
         </div>
 
-        <!-- Slide 2 -->
-        <div
-          class="hero-slide"
-          style="background-image: url(&quot;./assets/images/banner.png&quot;)"
-        >
-          <div class="overlay"></div>
-
-          <div class="container hero-content">
-            <h1>SECOND SLIDE TITLE</h1>
-            <p>Description text here</p>
-          </div>
-        </div>
-      </div>
-      <!-- Right Side Logos -->
-      <div class="side-logos">
+        <div class="side-logos">
         <div class="logo-box" data-name="TOTAL CONSTRUCTORS">
           <img src="assets/images/logo-right.png" />
           <span class="logo-text">TOTAL CONSTRUCTORS</span>
@@ -161,9 +149,15 @@
           <span class="logo-text">TOTAL MOVERS</span>
         </div>
       </div>
-    </section>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
     <section class="about-section">
-      <div class="container-fluid">
+      <div class="container-fluid section-padding">
         <div class="row align-items-center">
           <!-- LEFT CONTENT -->
           <div class="col-lg-6">
@@ -213,7 +207,7 @@
     <section class="stats-section">
       <div class="overlay"></div>
 
-      <div class="container-fluid">
+      <div class="container-fluid section-padding">
         <div class="row text-center">
           <div class="col-lg-3 col-md-6 stat-item">
             <p class="stat-title">COMPLETED PROJECTS</p>
@@ -242,7 +236,7 @@
       </div>
     </section>
     <section class="division-section">
-      <div class="container-fluid">
+      <div class="container-fluid section-padding">
         <!-- HEADER -->
         <div
           class="division-header d-flex justify-content-between align-items-start"
@@ -336,84 +330,87 @@
           alt=""
           src="./assets/images/Group-10709.svg"
         />
-      <!-- Top: Heading (left) + Image (right) -->
-      <div class="row g-0 why-top-row">
-        <div class="col-12 col-lg-6 why-heading-col">
-          <span class="section-tag">Why choose us</span>
-          <h1 class="choose-us-for">
-            Choose us for reliable,<br />
-            high-quality service
-          </h1>
-        </div>
-      </div>
-      <div class="why-image-col">
-        <img
-          class="frame-child34"
-          alt=""
-          src="assets/images/Rectangle-599@2x.png"
-        />
-      </div>
-      <!-- Bottom: 3×2 feature cards grid -->
-      <div class="row g-0 why-cards-row">
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h3 class="multi-service-solutions-under">
-              Multi-service solutions under one company
-            </h3>
-            <div class="we-provide-a">
-              We provide a wide range of property services under one trusted
-              brand, reducing the need to manage multiple contractors.
+        <div class="container-fuild section-padding">
+
+          <!-- Top: Heading (left) + Image (right) -->
+          <div class="row g-0 why-top-row">
+            <div class="col-12 col-lg-6 why-heading-col">
+              <span class="section-tag">Why choose us</span>
+              <h1 class="choose-us-for">
+                Choose us for reliable,<br />
+                high-quality service
+              </h1>
+            </div>
+          </div>
+          <div class="why-image-col">
+            <img
+              class="frame-child34"
+              alt=""
+              src="assets/images/Rectangle-599@2x.png"
+            />
+          </div>
+          <!-- Bottom: 3×2 feature cards grid -->
+          <div class="row g-0 why-cards-row">
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h3 class="multi-service-solutions-under">
+                  Multi-service solutions under one company
+                </h3>
+                <div class="we-provide-a">
+                  We provide a wide range of property services under one trusted
+                  brand, reducing the need to manage multiple contractors.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h2 class="professional-coordination">Professional coordination</h2>
+                <div class="our-divisions-work">
+                  Our divisions work together seamlessly to ensure smooth planning,
+                  execution, and timely project completion.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h2 class="reliable-efficient">Reliable &amp; Efficient Service</h2>
+                <div class="we-are-committed">
+                  We are committed to delivering dependable, well-organized, and
+                  efficient solutions for every project.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h2 class="safety-focused-approach">Safety-Focused Approach</h2>
+                <div class="we-follow-responsible">
+                  We follow responsible work practices with a strong emphasis on
+                  safety and site awareness.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h3 class="residential-commercial">
+                  Residential &amp; Commercial Expertise
+                </h3>
+                <div class="we-serve-both">
+                  We serve both residential and commercial clients with flexible and
+                  scalable solutions.
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-4">
+              <div class="why-card">
+                <h2 class="quality-accountability">Quality &amp; Accountability</h2>
+                <div class="we-maintain-high">
+                  We maintain high standards of workmanship, professionalism, and
+                  customer satisfaction.
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h2 class="professional-coordination">Professional coordination</h2>
-            <div class="our-divisions-work">
-              Our divisions work together seamlessly to ensure smooth planning,
-              execution, and timely project completion.
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h2 class="reliable-efficient">Reliable &amp; Efficient Service</h2>
-            <div class="we-are-committed">
-              We are committed to delivering dependable, well-organized, and
-              efficient solutions for every project.
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h2 class="safety-focused-approach">Safety-Focused Approach</h2>
-            <div class="we-follow-responsible">
-              We follow responsible work practices with a strong emphasis on
-              safety and site awareness.
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h3 class="residential-commercial">
-              Residential &amp; Commercial Expertise
-            </h3>
-            <div class="we-serve-both">
-              We serve both residential and commercial clients with flexible and
-              scalable solutions.
-            </div>
-          </div>
-        </div>
-        <div class="col-12 col-sm-6 col-lg-4">
-          <div class="why-card">
-            <h2 class="quality-accountability">Quality &amp; Accountability</h2>
-            <div class="we-maintain-high">
-              We maintain high standards of workmanship, professionalism, and
-              customer satisfaction.
-            </div>
-          </div>
-        </div>
-      </div>
     </section>
 
     <!-- How We Work — Bootstrap grid: image col-md-5, content col-md-7, steps col-sm-6 -->
@@ -432,6 +429,7 @@
         <!-- Content column -->
         <div class="col-12 col-lg-7 rectangle-parent25">
           <div class="frame-child40"></div>
+          <div class="container-fuild section-padding">
           <div class="frame-parent27">
             <div class="instance-wrapper">
               <span class="section-tag">how we work</span>
@@ -499,12 +497,14 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
     </section>
 
     <!-- Customer Feedback — Bootstrap grid: badge+heading full-width, cards col-md-6 -->
     <section class="customer-feedback">
       <!-- Badge + Heading -->
+        <div class="container-fuild section-padding">
       <div class="row g-0 mb-4 mb-md-5">
         <div class="col-12 col-lg-6">
           <div class="instance-frame mb-3">
@@ -573,6 +573,7 @@
           <div class="testimonials-custom-dots mt-4"></div>
         </div>
       </div>
+      </div>
     </section>
 
     <section class="frame-parent34 position-relative">
@@ -587,7 +588,8 @@
       <!-- Footer — Bootstrap grid: 3 cols on md+, stacked on mobile -->
       <div class="rectangle-parent27">
         <div class="frame-child47"></div>
-        <div class="frame-wrapper24">
+         <div class="container-fuild section-padding">
+        <div class="frame-wrapper24 pb-3">
           <div class="frame-parent35">
             <!-- Row 1: tagline | contact us | newsletter -->
             <div class="row g-4 g-lg-5 footer-info-row w-100 mb-3 ">
@@ -683,6 +685,7 @@
               </div>
             </div>
           </div>
+        </div>
         </div>
 
         <section class="footer-bar">
