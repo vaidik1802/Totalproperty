@@ -50,6 +50,7 @@ $(".hero-carousel").owlCarousel({
     margin: 20,
     nav: false,
     dots: false,
+    stagePadding: 0,
     responsive: {
       0: { items: 1 },
       576: { items: 2 },
