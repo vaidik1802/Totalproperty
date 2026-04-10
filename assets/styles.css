@@ -3761,7 +3761,7 @@ ul.aboutus-pg-core-values li::marker {
 
     .services-pg-list {
       padding-left: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       flex-grow: 1;
     }
 
@@ -3854,12 +3854,9 @@ ul.aboutus-pg-core-values li::marker {
     
     /* Specific logo colors based on the image provided */
     .color-blue { color: #0d6efd; }
-    .color-te { color: #16a34a; } /* Green for TE */
-    .color-tm { color: #dc2626; } /* Red for TM */
-    
-    .border-blue { border-color: #0d6efd; }
-    .border-te { border-color: #16a34a; }
-    .border-tm { border-color: #dc2626; }
+ 
+    .border-blue { border-color: #2563EB; }
+   
     .social-icons {
       display: flex;
       justify-content: start;
