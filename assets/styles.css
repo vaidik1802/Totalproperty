@@ -8,8 +8,8 @@ body {
    font-family: "Poppins", sans-serif;
    overflow-x: hidden;
 }
-.container {
-  max-width: 1320px;
+.container-fluid {
+  padding: 0 112px 0;
 }
 .navbar-toggler {
   border: none;
@@ -63,7 +63,7 @@ body {
   z-index: 999;
 }
 
-.custom-navbar .container {
+.custom-navbar .container-fluid {
   background: #fff;
   padding: 12px 15px;
   border-radius: 6px;
